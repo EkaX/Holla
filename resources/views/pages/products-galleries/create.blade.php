@@ -40,28 +40,31 @@
 
                 </div>
 
+                <label for="is_default" class="form-control-label">Jadikan Default </label>
+                <br>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
 
-                <div class="form-group">
-                    <label for="is_default" class="form-control-label">Jadikan Default </label>
-                  <br>
-                  <label>
+                  <label class="btn btn-primary active">
                      <input type="radio"
                             name="is_default"
                             value="1"
                             class="form-control @error('is_default') is-invalid @enderror"/> Ya   
                   </label> 
-
+                </div>
                   &nbsp;
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
 
-                  <label>
-                    <input type="radio"
-                           name="is_default"
-                           value="0"
-                           class="form-control @error('is_default') is-invalid @enderror"/> Tidak  
-                 </label> 
-                    @error('is_default') <div class="text-muted">{{ $message }}</div>
-                    @enderror
+                    <label class="btn btn-secondary active">
+                       <input type="radio"
+                              name="is_default"
+                              value="0"
+                              class="form-control @error('is_default') is-invalid @enderror"/> Tidak
+                    </label> 
+                </div>
+                <br>
 
+                <div>
+                    <label ></label>
                 </div>
 
                 <div class="form-group">
